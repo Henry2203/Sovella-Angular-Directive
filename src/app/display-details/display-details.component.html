@@ -1,0 +1,11 @@
+<section class="app-display-details">
+
+    <button (click)="textShow()">{{showingStatus}}</button>
+    <div class="text-container">
+        <p *ngIf="text" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquam iure beatae eaque, doloribus, quos atque quibusdam minima quam dolorum rem numquam ullam neque, qui hic autem quidem obcaecati cum.</p>
+    </div>
+
+
+    <p class="clicks" *ngFor="let count of loki; let i = index" [ngStyle]="{'color': i < 4 ? 'black' : 'white','background-color': i < 4 ? 'white' : 'black'}" [ngClass]="{'color': i < 4 }"> {{count}} </p>
+
+</section>
